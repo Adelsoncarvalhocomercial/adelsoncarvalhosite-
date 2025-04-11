@@ -3,71 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de Adelson Carvalho - Gestor de Tráfego Pago" />
-  <title>Adelson Carvalho | Gestor de Tráfego</title>
+  <meta name="description" content="Portfólio profissional de tráfego pago de Adelson Carvalho. Transformo cliques em clientes com estratégia, precisão e resultado." />
+  <title>Adelson Carvalho | Tráfego Pago</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <link rel="icon" type="image/png" href="AC.png">
+  <script src="script.js" defer></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+    }
+    .logo { height: 50px; }
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ccc;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: white; }
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 8rem 2rem;
+    }
+    .video-bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.1;
+      filter: grayscale(1);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: white;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #bbb;
+    }
+    .btn {
+      margin-top: 2rem;
+      background: white;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background: #ccc;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background-color: #111;
+    }
+    .card {
+      flex: 1 1 250px;
+      background: #1f1f1f;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    }
+    footer {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+    .qr-code {
+      margin-top: 1rem;
+      width: 100px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <img src="AC.png" alt="Logo Adelson Carvalho" class="logo" />
     <nav>
       <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
-        <li><a href="https://calendly.com/adelsoncarvalhocomercial/30min" target="_blank">Agende uma Reunião</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="inicio" class="hero">
-    <video autoplay muted loop class="video-bg">
-      <source src="background.mp4" type="video/mp4">
+  <section class="hero">
+    <video class="video-bg" autoplay muted loop>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-wave-background-34043-large.mp4" type="video/mp4">
     </video>
     <div class="hero-text">
       <h1>Transformo cliques em clientes</h1>
       <p>com estratégia, precisão e resultado.</p>
-      <div class="buttons">
-        <a href="https://wa.me/5527999994515" class="btn">WhatsApp</a>
-        <a href="mailto:adelsoncarvalhocomercial@gmail.com" class="btn">E-mail</a>
-        <a href="https://instagram.com/adelsoncarvalhoo" class="btn" target="_blank">Instagram</a>
-      </div>
+      <a href="https://forms.gle/jdoFivajxkxzgx9U7" class="btn" target="_blank">Preencher Briefing</a>
+      <img src="qrcode_briefing_resized.png" alt="QR Code" class="qr-code" />
     </div>
   </section>
 
-  <section id="sobre">
-    <h2>Sobre mim</h2>
-    <p>Sou especialista em tráfego pago e ajudo empresas a aumentarem suas vendas por meio de estratégias personalizadas nas plataformas Meta Ads, Google e TikTok Ads. Trabalho com foco em performance e conversão.</p>
-  </section>
-
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Meta Ads</h3>
-        <p>Campanhas de alta performance no Facebook e Instagram.</p>
-      </div>
-      <div class="card">
-        <h3>Google Ads</h3>
-        <p>Anúncios no Google, YouTube e rede de display com foco em resultados.</p>
-      </div>
-      <div class="card">
-        <h3>TikTok Ads</h3>
-        <p>Estratégias criativas e virais para o público do TikTok.</p>
-      </div>
+  <section id="servicos" class="cards">
+    <div class="card">
+      <h2>Gestão de Tráfego Pago</h2>
+      <p>Criação e otimização de campanhas Meta, Google, YouTube e TikTok Ads.</p>
+    </div>
+    <div class="card">
+      <h2>Landing Pages Estratégicas</h2>
+      <p>Criação de páginas focadas em conversão e performance.</p>
+    </div>
+    <div class="card">
+      <h2>Relatórios Inteligentes</h2>
+      <p>Acompanhamento com dashboards de resultados e sugestões de melhoria.</p>
     </div>
   </section>
 
-  <section id="briefing">
-    <h2>Briefing Rápido</h2>
-    <p>Preencha o formulário para iniciarmos sua estratégia personalizada:</p>
-    <a href="https://forms.gle/jdoFivajxkxzgx9U7" class="btn" target="_blank">Formulário de Briefing</a>
-    <img src="qrcode_briefing.png" alt="QR Code Briefing" class="qr-code" />
+  <section id="sobre" class="cards">
+    <div class="card">
+      <h2>Sobre mim</h2>
+      <p>Sou Adelson Carvalho, gestor de tráfego especializado em transformar estratégias digitais em resultados concretos. Tenho experiência com múltiplas plataformas e foco total em performance.</p>
+    </div>
   </section>
 
-  <footer>
+  <footer id="contato">
     <p>Contato: adelsoncarvalhocomercial@gmail.com | WhatsApp: (27) 99999-4515 | Instagram: @adelsoncarvalhoo</p>
+    <p>&copy; 2025 Adelson Carvalho. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
