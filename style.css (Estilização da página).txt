@@ -1,0 +1,112 @@
+gggg/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+header.hero {
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subheadline {
+  font-size: 1.2rem;
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.social-buttons a {
+  background-color: #202020;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.social-buttons a:hover {
+  background-color: #444;
+}
+
+.container {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro h2,
+.feature h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.intro p,
+.feature p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature img {
+  max-width: 45%;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #aaa;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .feature {
+    flex-direction: column;
+  }
+
+  .feature.reverse {
+    flex-direction: column;
+  }
+
+  .feature img {
+    max-width: 100%;
+  }
+}
