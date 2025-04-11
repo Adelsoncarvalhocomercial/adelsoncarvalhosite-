@@ -1,71 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adelson Carvalho | Gestor de Tráfego</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#0f0f0f',
-            secondary: '#1f1f1f',
-            accent: '#e5e5e5'
-          },
-          fontFamily: {
-            inter: ['Inter', 'sans-serif']
-          },
-          keyframes: {
-            fadeInUp: {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            }
-          },
-          animation: {
-            fadeInUp: 'fadeInUp 0.8s ease-out both'
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    .glow {
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease-in-out;
-    }
-    .glow:hover {
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
-      transform: scale(1.02);
-    }
-  </style>
+  <title>Transformo cliques em clientes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-primary text-white min-h-screen">
-  <header class="fixed top-0 left-0 w-full bg-black bg-opacity-80 backdrop-blur border-b border-gray-800 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <span class="text-lg font-bold text-white">Adelson Carvalho</span>
-      <nav class="space-x-4 hidden sm:block">
-        <a href="#" class="text-gray-300 hover:text-white transition">Início</a>
-        <a href="sobre.html" class="text-gray-300 hover:text-white transition">Sobre</a>
-        <a href="orcamento.html" class="text-gray-300 hover:text-white transition">Orçamento</a>
-      </nav>
-    </div>
+<body>
+  <header class="header">
+    <div class="logo">A</div>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
-  <div class="pt-32 max-w-3xl mx-auto px-6 py-12 text-center animate-fadeInUp">
-    <h1 class="text-4xl sm:text-5xl font-bold mb-4 text-white tracking-tight">Adelson Carvalho</h1>
-    <p class="text-lg text-gray-400 mb-12">Transformo cliques em clientes com estratégia, precisão e resultado.</p>
-    <div class="grid gap-4">
-      <a href="https://forms.gle/jdoFivajxkxzgx9U7" target="_blank" class="glow bg-white text-black py-3 px-6 rounded-xl font-semibold hover:bg-gray-200 transition">📝 Preencher Briefing</a>
-      <a href="https://wa.me/5527999994515" target="_blank" class="glow bg-white text-black py-3 px-6 rounded-xl font-semibold hover:bg-gray-200 transition">💬 Falar pelo WhatsApp</a>
-      <a href="https://instagram.com/adelsoncarvalhoo" target="_blank" class="glow bg-white text-black py-3 px-6 rounded-xl font-semibold hover:bg-gray-200 transition">📸 Ver Instagram</a>
-      <a href="https://calendly.com/adelsoncarvalhocomercial/30min" target="_blank" class="glow bg-white text-black py-3 px-6 rounded-xl font-semibold hover:bg-gray-200 transition">📅 Agendar uma Reunião</a>
+
+  <section class="hero">
+    <h1>Transformo cliques em clientes</h1>
+    <p>Com estratégia, precisão e resultado.</p>
+    <a href="https://calendly.com/adelsoncarvalhocomercial/30min" class="btn">Agende uma reunião</a>
+  </section>
+
+  <!-- Seção Sobre Mim -->
+  <section id="sobre" class="sobre" style="padding: 3rem 2rem; background-color: #111; color: #fff;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; font-weight: 700;">
+        🧠 Sobre Mim
+      </h2>
+      <p style="font-size: 1.125rem; font-weight: 600; margin-bottom: 1.5rem; color: #ccc;">
+        Sempre um passo à frente. Sempre fazendo a diferença.
+      </p>
+      <p style="margin-bottom: 1rem; line-height: 1.7; color: #ddd;">
+        A <strong style="color: #fff;">nossa agência</strong> é especialista em <strong style="color: #fff;">tráfego pago</strong>, impulsionando empresas com campanhas de alta performance no <strong style="color: #fff;">Google Ads</strong>, <strong style="color: #fff;">Meta Ads</strong> e <strong style="color: #fff;">TikTok Ads</strong>.
+      </p>
+      <p style="margin-bottom: 1rem; line-height: 1.7; color: #ddd;">
+        Cada projeto é único. Por isso, nossa equipe mergulha no seu negócio e desenvolve <strong style="color: #fff;">estratégias personalizadas</strong> para gerar <strong style="color: #fff;">resultados rápidos, escaláveis e duradouros</strong>.
+      </p>
+      <p style="line-height: 1.7; color: #ddd;">
+        Se você busca <strong style="color: #fff;">mais vendas</strong>, <strong style="color: #fff;">leads qualificados</strong> e <strong style="color: #fff;">crescimento digital com performance real</strong>, chegou ao lugar certo. Vamos transformar cliques em clientes.
+      </p>
     </div>
-    <footer class="mt-16 text-sm text-gray-500">© 2025 Adelson Carvalho. Todos os direitos reservados.</footer>
-  </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Fale comigo</h2>
+    <p>Entre em contato para impulsionar seus resultados com tráfego pago.</p>
+    <div class="botoes-contato">
+      <a href="https://wa.me/5527999994515" class="btn">WhatsApp</a>
+      <a href="https://www.instagram.com/adelsoncarvalhoo/" class="btn">Instagram</a>
+      <a href="mailto:adelsoncarvalhocomercial@gmail.com" class="btn">E-mail</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025. Site desenvolvido por A.C. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
