@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio profissional de tráfego pago de Adelson Carvalho. Transformo cliques em clientes com estratégia, precisão e resultado." />
-  <title>Adelson Carvalho | Tráfego Pago</title>
+  <meta name="description" content="Landing Page Profissional de Tráfego Pago por Adelson Carvalho. Transformo cliques em clientes com estratégia, precisão e resultado." />
+  <title>Adelson Carvalho | Gestor de Tráfego Pago</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="AC.png">
   <script src="script.js" defer></script>
@@ -14,6 +14,7 @@
       background: #0a0a0a;
       color: #f5f5f5;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
     }
     header {
       background-color: #1a1a1a;
@@ -69,6 +70,8 @@
       font-weight: bold;
       cursor: pointer;
       transition: transform 0.3s, background 0.3s;
+      text-decoration: none;
+      display: inline-block;
     }
     .btn:hover {
       transform: scale(1.05);
@@ -80,6 +83,7 @@
       gap: 2rem;
       padding: 4rem 2rem;
       background-color: #111;
+      justify-content: center;
     }
     .card {
       flex: 1 1 250px;
@@ -104,6 +108,23 @@
       margin-top: 1rem;
       width: 100px;
     }
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .cta {
+      background: #222;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .cta a {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -113,6 +134,7 @@
       <ul>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#cta">Briefing</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -125,35 +147,46 @@
     <div class="hero-text">
       <h1>Transformo cliques em clientes</h1>
       <p>com estratégia, precisão e resultado.</p>
-      <a href="https://forms.gle/jdoFivajxkxzgx9U7" class="btn" target="_blank">Preencher Briefing</a>
-      <img src="qrcode_briefing_resized.png" alt="QR Code" class="qr-code" />
-    </div>
-  </section>
-
-  <section id="servicos" class="cards">
-    <div class="card">
-      <h2>Gestão de Tráfego Pago</h2>
-      <p>Criação e otimização de campanhas Meta, Google, YouTube e TikTok Ads.</p>
-    </div>
-    <div class="card">
-      <h2>Landing Pages Estratégicas</h2>
-      <p>Criação de páginas focadas em conversão e performance.</p>
-    </div>
-    <div class="card">
-      <h2>Relatórios Inteligentes</h2>
-      <p>Acompanhamento com dashboards de resultados e sugestões de melhoria.</p>
+      <a href="#cta" class="btn">Quero Resultados</a>
     </div>
   </section>
 
   <section id="sobre" class="cards">
     <div class="card">
-      <h2>Sobre mim</h2>
-      <p>Sou Adelson Carvalho, gestor de tráfego especializado em transformar estratégias digitais em resultados concretos. Tenho experiência com múltiplas plataformas e foco total em performance.</p>
+      <h2 class="section-title">Sobre Mim</h2>
+      <p>Sou Adelson Carvalho, gestor de tráfego pago especializado em criar campanhas que convertem. Trabalho com YouTube Ads, Meta Ads, TikTok Ads e Google Ads. Meu foco é transformar investimentos em resultados reais para o seu negócio.</p>
     </div>
   </section>
 
+  <section id="servicos" class="cards">
+    <h2 class="section-title">Serviços</h2>
+    <div class="card">
+      <h3>Gestão de Tráfego Pago</h3>
+      <p>Criação, otimização e escala de campanhas de mídia paga focadas em performance.</p>
+    </div>
+    <div class="card">
+      <h3>Landing Pages</h3>
+      <p>Desenvolvimento de páginas com alta taxa de conversão para captar leads e clientes.</p>
+    </div>
+    <div class="card">
+      <h3>Análise e Relatórios</h3>
+      <p>Monitoramento de campanhas com relatórios inteligentes e insights de melhoria.</p>
+    </div>
+    <div class="card">
+      <h3>Consultoria Estratégica</h3>
+      <p>Orientação personalizada para alavancar os resultados do seu negócio com tráfego pago.</p>
+    </div>
+  </section>
+
+  <section id="cta" class="cta">
+    <h2>Vamos Começar?</h2>
+    <p>Preencha o briefing agora e receba uma proposta sob medida para o seu negócio.</p>
+    <a href="https://forms.gle/jdoFivajxkxzgx9U7" class="btn" target="_blank">Preencher Briefing</a>
+    <img src="qrcode_briefing_resized.png" alt="QR Code para formulário" class="qr-code" />
+  </section>
+
   <footer id="contato">
-    <p>Contato: adelsoncarvalhocomercial@gmail.com | WhatsApp: (27) 99999-4515 | Instagram: @adelsoncarvalhoo</p>
+    <p>Contato: adelsoncarvalhocomercial@gmail.com | WhatsApp: (27) 99999-4515 | Instagram: <a href="https://instagram.com/adelsoncarvalhoo" target="_blank">@adelsoncarvalhoo</a></p>
     <p>&copy; 2025 Adelson Carvalho. Todos os direitos reservados.</p>
   </footer>
 </body>
