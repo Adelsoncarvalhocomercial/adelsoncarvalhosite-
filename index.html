@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gestão de Tráfego Pago | Marque sua Reunião</title>
+  <title>Baixe o Checklist de Tráfego Pago</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #111;
+      background-color: #000;
       color: #fff;
     }
-    .header, .footer {
-      background-color: #000;
+    header, footer {
+      background-color: #111;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
@@ -22,22 +22,31 @@
     .logo {
       font-size: 1.5rem;
       font-weight: bold;
-      color: #fff;
     }
     nav ul {
       list-style: none;
       display: flex;
-      gap: 1.5rem;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
     }
-    nav a {
-      text-decoration: none;
+    nav a, .btn {
       color: #fff;
-      font-weight: 500;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover, .btn:hover {
+      background-color: #fff;
+      color: #000;
     }
     .hero {
       text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      padding: 5rem 2rem;
+      background: linear-gradient(120deg, #111, #222);
+      animation: fadeIn 1.5s ease-in-out;
     }
     .hero h1 {
       font-size: 2.5rem;
@@ -46,88 +55,92 @@
     .hero p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
+      color: #ccc;
     }
-    .btn {
+    .section {
+      padding: 4rem 2rem;
+      max-width: 700px;
+      margin: auto;
+      animation: fadeInUp 1.2s ease;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      color: #ccc;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+    }
+    .botoes-contato {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+    .btn-checklist {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
+      margin-top: 2rem;
       background-color: #fff;
       color: #000;
-      border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
-      transition: all 0.3s ease;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
     }
-    .btn:hover {
-      background-color: #ccc;
+    .btn-checklist:hover {
+      background-color: #ddd;
     }
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .contato .btn {
-      margin: 0.5rem 0.5rem 0 0;
-    }
-    .footer {
+    footer p {
       text-align: center;
-      font-size: 0.875rem;
+      color: #777;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-
-  <header class="header">
-    <div class="logo">Tráfego Pago</div>
+  <header>
+    <div class="logo">Checklist de Tráfego Pago</div>
     <nav>
       <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#formulario">Checklist</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Transformo cliques em clientes</h1>
-    <p>Gestão de tráfego pago com foco em vendas, performance e escala.</p>
-    <a href="https://calendly.com/adelsoncarvalhocomercial/30min" class="btn">Marque sua reunião gratuita</a>
+    <h1>Receba o Checklist Estratégico de Tráfego Pago</h1>
+    <p>Descubra os pontos essenciais que gestores profissionais usam para criar campanhas de sucesso.</p>
+    <a href="#formulario" class="btn">Quero o Checklist Grátis</a>
   </section>
 
-  <section id="sobre">
-    <h2>🧠 Sobre o Gestor</h2>
-    <p>
-      Sou especialista em tráfego pago e minha missão é simples: fazer você vender mais. Gerencio campanhas no Google Ads, Meta Ads e TikTok Ads, com foco em performance real e crescimento constante.
-    </p>
-    <p>
-      Minha abordagem estratégica é personalizada para cada negócio, garantindo que cada real investido traga retorno.
-    </p>
+  <section id="formulario" class="section">
+    <h2>Preencha para receber agora</h2>
+    <p>Você receberá imediatamente o PDF no seu e-mail com tudo o que precisa para planejar, executar e escalar suas campanhas com mais resultado.</p>
+    <iframe src="https://forms.gle/jdoFivajxkxzgx9U7" title="Formulário de Captura"></iframe>
+    <a class="btn-checklist" href="seu-link-do-checklist.pdf" download>📥 Baixar o Checklist (PDF)</a>
   </section>
 
-  <section id="servicos">
-    <h2>📈 O que faço por você</h2>
-    <ul>
-      <li>Planejamento de campanhas de alto impacto</li>
-      <li>Segmentação estratégica para atrair clientes certos</li>
-      <li>Otimização constante para reduzir custos e aumentar conversões</li>
-      <li>Relatórios de performance claros e objetivos</li>
-    </ul>
-    <p>Com minha gestão, você terá mais leads, mais vendas e menos desperdício de verba.</p>
-  </section>
-
-  <section id="contato" class="contato">
-    <h2>📞 Vamos conversar?</h2>
-    <p>Entre em contato ou marque uma reunião para entender como posso turbinar seus resultados com tráfego pago.</p>
+  <section id="contato" class="section">
+    <h2>Fale comigo</h2>
+    <p>Se quiser ajuda para aplicar esse checklist na prática, marque uma reunião gratuita agora mesmo.</p>
     <div class="botoes-contato">
       <a href="https://wa.me/5527999994515" class="btn">📱 WhatsApp</a>
       <a href="https://www.instagram.com/adelsoncarvalhoo/" class="btn">📸 Instagram</a>
-      <a href="mailto:adelsoncarvalhocomercial@gmail.com" class="btn">📧 E-mail</a>
-      <a href="https://calendly.com/adelsoncarvalhocomercial/30min" class="btn">🗓️ Agendar reunião</a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2025. Todos os direitos reservados. Transformando cliques em clientes.</p>
-  </footer>
-
-</body>
-</html>
+      <a href="
