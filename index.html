@@ -5,8 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Baixe o Checklist de Tráfego Pago</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header, footer {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    nav a, .btn {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover, .btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(120deg, #111, #222);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 700px;
+      margin: auto;
+      animation: fadeInUp 1.2s ease;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      color: #ccc;
+    }
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .botoes-contato, .botoes-acoes {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .btn-checklist, .btn-formulario {
+      display: inline-block;
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .btn-checklist:hover, .btn-formulario:hover {
+      background-color: #ddd;
+    }
+    footer p {
+      text-align: center;
+      color: #777;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <!-- HTML principal aqui (inserido no próximo passo) -->
+  <header>
+    <div class="logo">Checklist de Tráfego Pago</div>
+    <nav>
+      <ul>
+        <li><a href="#formulario">Checklist</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Receba o Checklist Estratégico de Tráfego Pago</h1>
+    <p>Descubra os pontos essenciais que gestores profissionais usam para criar campanhas de sucesso.</p>
+    <a href="#formulario" class="btn">Quero o Checklist Grátis</a>
+  </section>
+
+  <section id="formulario" class="section">
+    <h2>Preencha para receber agora</h2>
+    <p>Você receberá imediatamente o PDF no seu e-mail com tudo o que precisa para planejar, executar e escalar suas campanhas com mais resultado.</p>
+    <iframe src="https://forms.gle/jdoFivajxkxzgx9U7" title="Formulário de Captura"></iframe>
+    <div class="botoes-acoes">
+      <a class="btn-checklist" href="seu-link-do-checklist.pdf" download>📥 Baixar o Checklist (PDF)</a>
+      <a class="btn-formulario" href="https://forms.gle/jdoFivajxkxzgx9U7" target="_blank">📝 Acessar o Formulário</a>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <h2>Fale comigo</h2>
+    <p>Se quiser ajuda para aplicar esse checklist na prática, marque uma reunião gratuita agora mesmo.</p>
+    <div class="botoes-contato">
+      <a href="https://wa.me/5527999994515" class="btn">📱 WhatsApp</a>
+      <a href="https://www.instagram.com/adelsoncarvalhoo/" class="btn">📸 Instagram</a>
+      <a href="mailto:adelsoncarvalhocomercial@gmail.com" class="btn">📧 E-mail</a>
+      <a href="https://calendly.com/adelsoncarvalhocomercial/30min" class="btn">📅 Agende sua Reunião</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
