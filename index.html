@@ -1,158 +1,187 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baixe o Checklist de Tráfego Pago</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header, footer {
-      background-color: #111;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      padding: 0;
-      margin: 0;
-    }
-    nav a, .btn {
-      color: #fff;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      border: 1px solid #fff;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-    nav a:hover, .btn:hover {
-      background-color: #fff;
-      color: #000;
-    }
-    .hero {
-      text-align: center;
-      padding: 5rem 2rem;
-      background: linear-gradient(120deg, #111, #222);
-      animation: fadeIn 1.5s ease-in-out;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: #ccc;
-    }
-    .section {
-      padding: 4rem 2rem;
-      max-width: 700px;
-      margin: auto;
-      animation: fadeInUp 1.2s ease;
-      text-align: center;
-    }
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .section p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 1rem;
-      color: #ccc;
-    }
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-    }
-    .botoes-contato, .botoes-acoes {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    .btn-checklist, .btn-formulario {
-      display: inline-block;
-      background-color: #fff;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      transition: background-color 0.3s;
-    }
-    .btn-checklist:hover, .btn-formulario:hover {
-      background-color: #ddd;
-    }
-    footer p {
-      text-align: center;
-      color: #777;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; } to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Tráfego Pago com interatividade e funcionalidades educacionais para aumentar as conversões.">
+    <title>Tráfego Pago - Página de Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #111;
+        }
+
+        .cta-button {
+            background-color: #111;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #333;
+        }
+
+        .quiz-container, .calculator-container, .lesson-container, .survey-container {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input, button, select {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo">Checklist de Tráfego Pago</div>
-    <nav>
-      <ul>
-        <li><a href="#formulario">Checklist</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Receba o Checklist Estratégico de Tráfego Pago</h1>
-    <p>Descubra os pontos essenciais que gestores profissionais usam para criar campanhas de sucesso.</p>
-    <a href="#formulario" class="btn">Quero o Checklist Grátis</a>
-  </section>
+    <header>
+        <h1>Tráfego Pago - Transforme seus Anúncios em Resultados!</h1>
+    </header>
 
-  <section id="formulario" class="section">
-    <h2>Preencha para receber agora</h2>
-    <p>Você receberá imediatamente o PDF no seu e-mail com tudo o que precisa para planejar, executar e escalar suas campanhas com mais resultado.</p>
-    <iframe src="https://forms.gle/jdoFivajxkxzgx9U7" title="Formulário de Captura"></iframe>
-    <div class="botoes-acoes">
-      <a class="btn-checklist" href="seu-link-do-checklist.pdf" download>📥 Baixar o Checklist (PDF)</a>
-      <a class="btn-formulario" href="https://forms.gle/jdoFivajxkxzgx9U7" target="_blank">📝 Acessar o Formulário</a>
+    <div class="container">
+        <!-- ROI Calculator -->
+        <div class="calculator-container">
+            <h2>Calculadora de ROI</h2>
+            <p>Descubra o retorno potencial do seu investimento em tráfego pago.</p>
+            <label for="investment">Investimento diário (R$):</label>
+            <input type="number" id="investment" placeholder="Digite o valor em R$">
+            <label for="cpc">CPC médio (R$):</label>
+            <input type="number" id="cpc" placeholder="Digite o CPC médio">
+            <label for="conversionRate">Taxa de conversão (%):</label>
+            <input type="number" id="conversionRate" placeholder="Digite a taxa de conversão">
+            <button onclick="calculateROI()">Calcular ROI</button>
+            <div class="result" id="roiResult"></div>
+        </div>
+
+        <!-- Quiz -->
+        <div class="quiz-container">
+            <h2>Qual Tipo de Anúncio é Ideal Para o Seu Negócio?</h2>
+            <form id="quizForm">
+                <label for="goal">Qual é o seu objetivo principal com anúncios pagos?</label>
+                <select id="goal">
+                    <option value="vendas">Aumentar vendas</option>
+                    <option value="leads">Gerar leads qualificados</option>
+                    <option value="visibilidade">Aumentar visibilidade da marca</option>
+                </select>
+
+                <label for="budget">Qual é o seu orçamento mensal para anúncios pagos?</label>
+                <select id="budget">
+                    <option value="500">Menos de R$500</option>
+                    <option value="1500">Entre R$500 e R$1.500</option>
+                    <option value="1500plus">Mais de R$1.500</option>
+                </select>
+
+                <button type="button" onclick="submitQuiz()">Enviar Quiz</button>
+            </form>
+            <div class="result" id="quizResult"></div>
+        </div>
+
+        <!-- Survey -->
+        <div class="survey-container">
+            <h2>Pesquisa: Quais são seus maiores desafios com anúncios pagos?</h2>
+            <form>
+                <label for="challenges">Selecione seus principais desafios:</label>
+                <select id="challenges">
+                    <option value="lowConversion">Baixa taxa de conversão</option>
+                    <option value="highCpc">Alto custo por clique</option>
+                    <option value="segmentation">Falta de segmentação eficaz</option>
+                    <option value="other">Outro</option>
+                </select>
+
+                <button type="button" onclick="submitSurvey()">Enviar Pesquisa</button>
+            </form>
+            <div class="result" id="surveyResult"></div>
+        </div>
+
+        <!-- Lesson -->
+        <div class="lesson-container">
+            <h2>Como Criar Campanhas de Tráfego Pago Vencedoras</h2>
+            <p>Aprenda passo a passo como criar campanhas de sucesso!</p>
+            <ol>
+                <li><strong>Passo 1:</strong> Escolha seu Público-Alvo</li>
+                <li><strong>Passo 2:</strong> Defina seu Orçamento</li>
+                <li><strong>Passo 3:</strong> Crie seu Anúncio</li>
+            </ol>
+            <button class="cta-button" onclick="window.location.href='https://calendly.com/adelsoncarvalhocomercial/30min'">Agende uma Consultoria Gratuita</button>
+        </div>
+
     </div>
-  </section>
 
-  <section id="contato" class="section">
-    <h2>Fale comigo</h2>
-    <p>Se quiser ajuda para aplicar esse checklist na prática, marque uma reunião gratuita agora mesmo.</p>
-    <div class="botoes-contato">
-      <a href="https://wa.me/5527999994515" class="btn">📱 WhatsApp</a>
-      <a href="https://www.instagram.com/adelsoncarvalhoo/" class="btn">📸 Instagram</a>
-      <a href="mailto:adelsoncarvalhocomercial@gmail.com" class="btn">📧 E-mail</a>
-      <a href="https://calendly.com/adelsoncarvalhocomercial/30min" class="btn">📅 Agende sua Reunião</a>
-    </div>
-  </section>
+    <footer>
+        <p style="text-align:center; padding:20px; background-color:#111; color:white;">© 2025 Tráfego Master</p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2025. Todos os direitos reservados.</p>
-  </footer>
+    <script>
+        function calculateROI() {
+            var investment = parseFloat(document.getElementById('investment').value);
+            var cpc = parseFloat(document.getElementById('cpc').value);
+            var conversionRate = parseFloat(document.getElementById('conversionRate').value);
+
+            if (!investment || !cpc || !conversionRate) {
+                document.getElementById('roiResult').innerText = 'Por favor, preencha todos os campos.';
+                return;
+            }
+
+            var estimatedConversions = (investment / cpc) * (conversionRate / 100);
+            var roi = estimatedConversions * 100; // Exemplo simplificado
+
+            document.getElementById('roiResult').innerText = `ROI estimado: R$ ${roi.toFixed(2)}`;
+        }
+
+        function submitQuiz() {
+            var goal = document.getElementById('goal').value;
+            var budget = document.getElementById('budget').value;
+
+            var resultText = `Você deve focar em anúncios no ${goal}, com um orçamento de R$${budget}. Recomendamos estratégias de anúncios específicas para o seu perfil!`;
+            document.getElementById('quizResult').innerText = resultText;
+        }
+
+        function submitSurvey() {
+            var challenges = document.getElementById('challenges').value;
+
+            var resultText = `Desafio Selecionado: ${challenges}. Vamos agendar uma consultoria para superar esse obstáculo!`;
+            document.getElementById('surveyResult').innerText = resultText;
+        }
+    </script>
 </body>
 </html>
