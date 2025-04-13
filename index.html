@@ -1,155 +1,173 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de Tráfego Pago com interatividade e funcionalidades educacionais para aumentar as conversões.">
-    <meta name="keywords" content="tráfego pago, gestão de anúncios, ROI, marketing digital">
+    <meta name="description" content="Transforme cliques em clientes com uma estratégia de tráfego pago eficiente. Agende sua consultoria agora!">
+    <meta name="keywords" content="gestão de tráfego pago, anúncios, marketing digital, conversões, consultoria digital">
     <meta name="author" content="Adelson Carvalho">
-    <meta property="og:title" content="Tráfego Pago - Página de Produto">
-    <meta property="og:description" content="Transforme seus anúncios em resultados. Aprenda a otimizar seu tráfego pago!">
-    <meta property="og:image" content="link-to-your-image.jpg">
-    <meta property="og:url" content="https://seusite.com">
-    <title>Tráfego Pago - Página de Produto</title>
+    <title>Gestão de Tráfego Pago - Consultoria e Resultados</title>
     
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Tag Manager -->
-    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TWR6HCKM"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TWR6HCKM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GTM-TWR6HCKM');
     </script>
-</head>
-<body>
-    <header>
-        <h1>Tráfego Pago - Transforme seus Anúncios em Resultados!</h1>
-    </header>
 
-    <div class="container">
-        <!-- Contador Regressivo -->
-        <div id="countdown" class="countdown-container">
-            <h2>Oferta Exclusiva - Faltam:</h2>
-            <div id="countdown-timer"></div>
-        </div>
+    <!-- Meta Tags -->
+    <meta property="og:title" content="Consultoria em Tráfego Pago - Transforme Seus Cliques em Clientes">
+    <meta property="og:description" content="Consultoria especializada em tráfego pago para aumentar suas conversões. Agende agora e comece a transformar seus resultados.">
+    <meta property="og:image" content="link_da_imagem_de_capa.jpg">
+    <meta property="og:url" content="http://www.seusite.com.br">
 
-        <!-- ROI Calculator -->
-        <div class="calculator-container">
-            <h2>Calculadora de ROI</h2>
-            <p>Descubra o retorno potencial do seu investimento em tráfego pago.</p>
-            <label for="investment">Investimento diário (R$):</label>
-            <input type="number" id="investment" placeholder="Digite o valor em R$">
-            <label for="cpc">CPC médio (R$):</label>
-            <input type="number" id="cpc" placeholder="Digite o CPC médio">
-            <label for="conversionRate">Taxa de conversão (%):</label>
-            <input type="number" id="conversionRate" placeholder="Digite a taxa de conversão">
-            <button onclick="calculateROI()">Calcular ROI</button>
-            <div class="result" id="roiResult"></div>
-        </div>
-
-        <!-- Quiz -->
-        <div class="quiz-container">
-            <h2>Qual Tipo de Anúncio é Ideal Para o Seu Negócio?</h2>
-            <form id="quizForm">
-                <label for="goal">Qual é o seu objetivo principal com anúncios pagos?</label>
-                <select id="goal">
-                    <option value="vendas">Aumentar vendas</option>
-                    <option value="leads">Gerar leads qualificados</option>
-                    <option value="visibilidade">Aumentar visibilidade da marca</option>
-                </select>
-
-                <label for="budget">Qual é o seu orçamento mensal para anúncios pagos?</label>
-                <select id="budget">
-                    <option value="500">Menos de R$500</option>
-                    <option value="1500">Entre R$500 e R$1.500</option>
-                    <option value="1500plus">Mais de R$1.500</option>
-                </select>
-
-                <button type="button" onclick="submitQuiz()">Enviar Quiz</button>
-            </form>
-            <div class="result" id="quizResult"></div>
-        </div>
-
-        <!-- Prova Social -->
-        <div class="social-proof">
-            <h2>Depoimentos</h2>
-            <div class="testimonial">
-                <p>"A consultoria de tráfego pago aumentou nossa taxa de conversão em 300%! Muito recomendados!"</p>
-                <p>- João Silva, CEO da Empresa XYZ</p>
-            </div>
-            <div class="testimonial">
-                <p>"Excelente! A estratégia de tráfego pago transformou nosso alcance nas redes sociais."</p>
-                <p>- Maria Oliveira, Fundadora da Loja ABC</p>
-            </div>
-            <h3>Marcas que confiam em nosso trabalho:</h3>
-            <div class="logos">
-                <img src="logo1.png" alt="Logo 1">
-                <img src="logo2.png" alt="Logo 2">
-                <img src="logo3.png" alt="Logo 3">
-            </div>
-        </div>
-
-        <!-- Lesson -->
-        <div class="lesson-container">
-            <h2>Como Criar Campanhas de Tráfego Pago Vencedoras</h2>
-            <p>Aprenda passo a passo como criar campanhas de sucesso!</p>
-            <ol>
-                <li><strong>Passo 1:</strong> Escolha seu Público-Alvo</li>
-                <li><strong>Passo 2:</strong> Defina seu Orçamento</li>
-                <li><strong>Passo 3:</strong> Crie seu Anúncio</li>
-            </ol>
-            <button class="cta-button" onclick="window.location.href='https://calendly.com/adelsoncarvalhocomercial/30min'">Agende uma Consultoria Gratuita</button>
-        </div>
-
-    </div>
-
-    <footer>
-        <p style="text-align:center; padding:20px; background-color:#111; color:white;">© 2025 Tráfego Master</p>
-    </footer>
-
-    <!-- External JS -->
-    <script src="script.js"></script>
-
-    <script>
-        // Contador Regressivo
-        const countdownDate = new Date("Apr 20, 2025 00:00:00").getTime();
-        const countdownTimer = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("countdown-timer").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-            if (distance < 0) {
-                clearInterval(countdownTimer);
-                document.getElementById("countdown-timer").innerHTML = "A oferta expirou";
-            }
-        }, 1000);
-
-        // Calcular ROI
-        function calculateROI() {
-            const investment = document.getElementById("investment").value;
-            const cpc = document.getElementById("cpc").value;
-            const conversionRate = document.getElementById("conversionRate").value;
-            const roi = (investment / cpc) * conversionRate;
-            document.getElementById("roiResult").innerHTML = "Seu ROI estimado é: " + roi + "%";
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo de animações */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
-        // Enviar Quiz
-        function submitQuiz() {
-            const goal = document.getElementById("goal").value;
-            const budget = document.getElementById("budget").value;
-            document.getElementById("quizResult").innerHTML = "Obrigado por responder! Seu objetivo é " + goal + " e seu orçamento é " + budget + ".";
+        .fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        /* Botões de redes sociais */
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-buttons a {
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #0073e6;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        /* Footer (Rodapé) */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .form-section {
+            margin: 40px 0;
+        }
+
+        /* Botão CTA */
+        .cta-button {
+            background-color: #ff5733;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* Formulário de Briefing */
+        .form-briefing {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-briefing input, .form-briefing textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Certificados e Garantias */
+        .certificates {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .certificate {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="fade-in">Transforme Seus Cliques em Clientes</h1>
+        <p class="fade-in">Consultoria especializada para aumentar suas conversões com tráfego pago. Agende sua consulta agora!</p>
+        <div class="cta-button fade-in" onclick="window.location.href='#formulario';">Agende sua Consultoria</div>
+    </header>
+
+    <section class="form-section fade-in">
+        <h2>Formulário de Briefing</h2>
+        <p>Preencha o formulário abaixo para nos ajudar a entender suas necessidades e entregar a melhor solução de tráfego pago para seu negócio.</p>
+        <form action="https://forms.gle/jdoFivajxkxzgx9U7" method="POST" class="form-briefing">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="tel" name="whatsapp" placeholder="WhatsApp (opcional)">
+            <textarea name="detalhes" placeholder="Detalhe seu objetivo ou outras informações importantes" required></textarea>
+            <div class="cta-button" onclick="this.closest('form').submit()">Enviar Briefing</div>
+        </form>
+    </section>
+
+    <section class="certificates fade-in">
+        <div class="certificate">
+            <h3>Certificado X</h3>
+            <p>Certificação comprovada em anúncios pagos e otimização.</p>
+        </div>
+        <div class="certificate">
+            <h3>Garantia de Satisfação</h3>
+            <p>Oferecemos garantia de reembolso se você não estiver satisfeito com os resultados!</p>
+        </div>
+    </section>
+
+    <section class="social-buttons fade-in">
+        <a href="https://wa.me/5521XXXXXXX" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/adelsoncarvalhoo" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </section>
+
+    <footer>
+        <p>© 2025 Adelson Carvalho - Todos os direitos reservados.</p>
+        <p><a href="mailto:adelsoncarvalhocomercial@gmail.com">Contate-nos</a> | <a href="#formulario">Agende uma Consultoria</a></p>
+    </footer>
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWR6HCKM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <!-- Teste A/B -->
+    <script>
+        // Código para Testes A/B
+        let testVariant = Math.random() < 0.5 ? 'A' : 'B';
+        if (testVariant === 'B') {
+            // Alterar elementos para versão B
+            document.querySelector('h1').textContent = "Consultoria de Tráfego Pago para Sua Empresa";
+            document.querySelector('p').textContent = "Transforme seus resultados com estratégias de anúncios personalizadas.";
         }
     </script>
 </body>
+
 </html>
