@@ -1,173 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Transforme cliques em clientes com uma estratégia de tráfego pago eficiente. Agende sua consultoria agora!">
-    <meta name="keywords" content="gestão de tráfego pago, anúncios, marketing digital, conversões, consultoria digital">
+    <meta name="description" content="Gestão de tráfego pago e conversões de anúncios. Conquiste resultados reais com estratégias avançadas.">
+    <meta name="keywords" content="tráfego pago, anúncios, gestão de tráfego, ROI, marketing digital">
     <meta name="author" content="Adelson Carvalho">
-    <title>Gestão de Tráfego Pago - Consultoria e Resultados</title>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TWR6HCKM"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GTM-TWR6HCKM');
-    </script>
-
-    <!-- Meta Tags -->
-    <meta property="og:title" content="Consultoria em Tráfego Pago - Transforme Seus Cliques em Clientes">
-    <meta property="og:description" content="Consultoria especializada em tráfego pago para aumentar suas conversões. Agende agora e comece a transformar seus resultados.">
-    <meta property="og:image" content="link_da_imagem_de_capa.jpg">
-    <meta property="og:url" content="http://www.seusite.com.br">
-
-    <link rel="stylesheet" href="styles.css">
+    <meta name="robots" content="index, follow">
+    <title>Gestão de Tráfego Pago - Adelson Carvalho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.ico">
     <style>
-        /* Estilo de animações */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .fade-in {
-            animation: fadeIn 1.5s ease-in;
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
         }
 
-        /* Botões de redes sociais */
-        .social-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-buttons a {
-            padding: 10px;
-            border-radius: 50%;
-            background-color: #0073e6;
-            color: white;
-            font-size: 20px;
-            text-decoration: none;
-        }
-
-        /* Footer (Rodapé) */
-        footer {
-            background-color: #333;
-            color: white;
+        header {
+            background-color: #000;
+            color: #fff;
             padding: 20px;
             text-align: center;
         }
 
-        footer a {
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ff4b5c;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #e03e49;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 24px;
             color: #fff;
             text-decoration: none;
-            margin: 0 10px;
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        .social-links a:hover {
+            color: #ff4b5c;
         }
 
-        .form-section {
-            margin: 40px 0;
+        .form-container {
+            margin-top: 20px;
         }
 
-        /* Botão CTA */
-        .cta-button {
-            background-color: #ff5733;
-            color: white;
-            padding: 15px 30px;
-            text-align: center;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        /* Formulário de Briefing */
-        .form-briefing {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .form-briefing input, .form-briefing textarea {
+        .form-container input, .form-container button {
+            padding: 12px;
+            margin: 10px 0;
             width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
+            max-width: 400px;
             border-radius: 5px;
-        }
-
-        /* Certificados e Garantias */
-        .certificates {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-
-        .certificate {
-            padding: 15px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: #ff4b5c;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #e03e49;
+        }
+
+        .form-container input[type="text"], .form-container input[type="email"] {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .cta-button {
+                padding: 12px 20px;
+            }
+
+            .form-container input, .form-container button {
+                width: 100%;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
-
 <body>
+
     <header>
-        <h1 class="fade-in">Transforme Seus Cliques em Clientes</h1>
-        <p class="fade-in">Consultoria especializada para aumentar suas conversões com tráfego pago. Agende sua consulta agora!</p>
-        <div class="cta-button fade-in" onclick="window.location.href='#formulario';">Agende sua Consultoria</div>
+        <h1>Transforme Seus Cliques em Clientes</h1>
+        <a href="#formulario" class="cta-button">Solicite sua Consultoria</a>
     </header>
 
-    <section class="form-section fade-in">
+    <div class="section">
+        <h2>Por Que Trabalhar Comigo?</h2>
+        <p>Eu ajudo empresas a alcançarem resultados incríveis com tráfego pago, utilizando estratégias personalizadas e eficazes. Com a minha experiência, você alcança o ROI desejado e conquista clientes qualificados.</p>
+        <a href="#formulario" class="cta-button">Comece Agora</a>
+    </div>
+
+    <div class="section" id="formulario">
         <h2>Formulário de Briefing</h2>
-        <p>Preencha o formulário abaixo para nos ajudar a entender suas necessidades e entregar a melhor solução de tráfego pago para seu negócio.</p>
-        <form action="https://forms.gle/jdoFivajxkxzgx9U7" method="POST" class="form-briefing">
-            <input type="text" name="nome" placeholder="Nome completo" required>
-            <input type="email" name="email" placeholder="E-mail" required>
-            <input type="tel" name="whatsapp" placeholder="WhatsApp (opcional)">
-            <textarea name="detalhes" placeholder="Detalhe seu objetivo ou outras informações importantes" required></textarea>
-            <div class="cta-button" onclick="this.closest('form').submit()">Enviar Briefing</div>
-        </form>
-    </section>
-
-    <section class="certificates fade-in">
-        <div class="certificate">
-            <h3>Certificado X</h3>
-            <p>Certificação comprovada em anúncios pagos e otimização.</p>
+        <p>Preencha o formulário abaixo e vamos começar a planejar sua estratégia de tráfego pago personalizada!</p>
+        
+        <div class="form-container">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <input type="text" name="whatsapp" placeholder="Seu WhatsApp (opcional)">
+                <button type="submit">Enviar Informações</button>
+            </form>
         </div>
-        <div class="certificate">
-            <h3>Garantia de Satisfação</h3>
-            <p>Oferecemos garantia de reembolso se você não estiver satisfeito com os resultados!</p>
-        </div>
-    </section>
-
-    <section class="social-buttons fade-in">
-        <a href="https://wa.me/5521XXXXXXX" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://instagram.com/adelsoncarvalhoo" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    </section>
+    </div>
 
     <footer>
-        <p>© 2025 Adelson Carvalho - Todos os direitos reservados.</p>
-        <p><a href="mailto:adelsoncarvalhocomercial@gmail.com">Contate-nos</a> | <a href="#formulario">Agende uma Consultoria</a></p>
+        <p>&copy; 2025 Adelson Carvalho | <a href="mailto:adelsoncarvalhocomercial@gmail.com">Contato por E-mail</a></p>
+        <div class="social-links">
+            <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/adelsoncarvalhoo" target="_blank">Instagram</a>
+        </div>
     </footer>
 
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWR6HCKM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    
-    <!-- Teste A/B -->
-    <script>
-        // Código para Testes A/B
-        let testVariant = Math.random() < 0.5 ? 'A' : 'B';
-        if (testVariant === 'B') {
-            // Alterar elementos para versão B
-            document.querySelector('h1').textContent = "Consultoria de Tráfego Pago para Sua Empresa";
-            document.querySelector('p').textContent = "Transforme seus resultados com estratégias de anúncios personalizadas.";
-        }
-    </script>
 </body>
-
 </html>
