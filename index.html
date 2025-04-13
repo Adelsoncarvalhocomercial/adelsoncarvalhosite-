@@ -3,160 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gestão de tráfego pago e conversões de anúncios. Conquiste resultados reais com estratégias avançadas.">
-    <meta name="keywords" content="tráfego pago, anúncios, gestão de tráfego, ROI, marketing digital">
-    <meta name="author" content="Adelson Carvalho">
+    <meta name="description" content="Transforme seu tráfego pago em resultados reais. Consultoria especializada em Facebook Ads, Google Ads e estratégias de marketing digital.">
+    <meta name="keywords" content="tráfego pago, consultoria de marketing digital, Google Ads, Facebook Ads, otimização de conversão, aumento de vendas, marketing digital">
+    <title>Consultoria em Tráfego Pago | Transforme Cliques em Clientes</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- SEO -->
     <meta name="robots" content="index, follow">
-    <title>Gestão de Tráfego Pago - Adelson Carvalho</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="logo.ico">
+
+    <!-- Open Graph for social media sharing -->
+    <meta property="og:title" content="Consultoria em Tráfego Pago">
+    <meta property="og:description" content="Transforme seus resultados com tráfego pago. Aumente suas conversões com uma estratégia de marketing digital personalizada.">
+    <meta property="og:image" content="url_da_imagem.jpg">
+    <meta property="og:url" content="https://www.seusite.com">
+
+    <!-- Google Optimize (para Teste A/B) -->
+    <script async src="https://www.googleoptimize.com/optimize.js?id=GTM-TWR6HCKM"></script>
+
+    <!-- Inclusão do AOS (Animate On Scroll) para animações avançadas -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Inclusão do GSAP para animações avançadas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+    <!-- Estilo para Animações e Teste A/B -->
     <style>
-        /* Reset de estilos básicos */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-        }
-
-        header {
+        /* Animações para botões e ícones */
+        .cta-button {
+            padding: 10px 20px;
             background-color: #000;
             color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #ff4b5c;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 5px;
             text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
         }
 
         .cta-button:hover {
-            background-color: #e03e49;
+            background-color: #ff4081;
+            transform: scale(1.05);
         }
 
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .social-links a {
-            margin: 0 10px;
+        .social-icon {
             font-size: 24px;
-            color: #fff;
-            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
         }
 
-        .social-links a:hover {
-            color: #ff4b5c;
+        .social-icon:hover {
+            color: #ff4081;
+            transform: scale(1.2);
         }
 
-        .form-container {
-            margin-top: 20px;
+        /* Animações suaves para as seções */
+        .services, .portfolio, .testimonials, .contact {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease-in-out;
         }
 
-        .form-container input, .form-container button {
-            padding: 12px;
-            margin: 10px 0;
-            width: 100%;
-            max-width: 400px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .form-container button {
-            background-color: #ff4b5c;
-            color: white;
-            cursor: pointer;
-        }
-
-        .form-container button:hover {
-            background-color: #e03e49;
-        }
-
-        .form-container input[type="text"], .form-container input[type="email"] {
-            width: 100%;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.5em;
-            }
-
-            .cta-button {
-                padding: 12px 20px;
-            }
-
-            .form-container input, .form-container button {
-                width: 100%;
-                font-size: 16px;
-            }
+        .services.visible, .portfolio.visible, .testimonials.visible, .contact.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
-<body>
-
+<body data-aos-easing="ease-out-back">
     <header>
-        <h1>Transforme Seus Cliques em Clientes</h1>
-        <a href="#formulario" class="cta-button">Solicite sua Consultoria</a>
+        <nav>
+            <ul>
+                <li><a href="#home" data-aos="fade-down" data-aos-delay="200">Início</a></li>
+                <li><a href="#services" data-aos="fade-down" data-aos-delay="300">Serviços</a></li>
+                <li><a href="#portfolio" data-aos="fade-down" data-aos-delay="400">Portfólio</a></li>
+                <li><a href="#contact" data-aos="fade-down" data-aos-delay="500">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="section">
-        <h2>Por Que Trabalhar Comigo?</h2>
-        <p>Eu ajudo empresas a alcançarem resultados incríveis com tráfego pago, utilizando estratégias personalizadas e eficazes. Com a minha experiência, você alcança o ROI desejado e conquista clientes qualificados.</p>
-        <a href="#formulario" class="cta-button">Comece Agora</a>
-    </div>
+    <section id="home" class="hero" data-aos="fade-up" data-aos-delay="600">
+        <h1>Transforme seu Tráfego Pago em Resultados Reais</h1>
+        <p>Especialista em campanhas no Facebook Ads, Google Ads e estratégias de marketing digital que aumentam suas conversões e reduzem o custo por clique.</p>
+        <a href="#services" class="cta-button">Saiba Mais</a>
+    </section>
 
-    <div class="section" id="formulario">
-        <h2>Formulário de Briefing</h2>
-        <p>Preencha o formulário abaixo e vamos começar a planejar sua estratégia de tráfego pago personalizada!</p>
-        
-        <div class="form-container">
-            <form action="https://formspree.io/f/your-form-id" method="POST">
-                <input type="text" name="nome" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu E-mail" required>
-                <input type="text" name="whatsapp" placeholder="Seu WhatsApp (opcional)">
-                <button type="submit">Enviar Informações</button>
-            </form>
+    <section id="services" class="services" data-aos="fade-up" data-aos-delay="700">
+        <h2>Meus Serviços</h2>
+        <div class="service-card" data-aos="flip-left" data-aos-delay="800">
+            <h3>Consultoria de Tráfego Pago</h3>
+            <p>Criação e otimização de campanhas para aumentar suas conversões e resultados com anúncios pagos.</p>
         </div>
-    </div>
+        <div class="service-card" data-aos="flip-left" data-aos-delay="900">
+            <h3>Gestão de Google Ads</h3>
+            <p>Maximize sua visibilidade e vendas com anúncios otimizados no Google. Estruturas eficientes e rentáveis.</p>
+        </div>
+        <div class="service-card" data-aos="flip-left" data-aos-delay="1000">
+            <h3>Estratégias para Facebook Ads</h3>
+            <p>Campanhas segmentadas para garantir o melhor ROI e aumentar o engajamento com seu público-alvo.</p>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Adelson Carvalho | <a href="mailto:adelsoncarvalhocomercial@gmail.com">Contato por E-mail</a></p>
+    <section id="portfolio" class="portfolio" data-aos="fade-up" data-aos-delay="1100">
+        <h2>Portfólio</h2>
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="1200">
+            <h3>Estudo de Caso: Cliente X</h3>
+            <p>Aumento de 200% nas vendas com a otimização de campanhas no Facebook Ads. Confira mais resultados!</p>
+        </div>
+        <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="1300">
+            <h3>Estudo de Caso: Cliente Y</h3>
+            <p>Redução de CPA em 30% no Google Ads, gerando maior retorno de investimento.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials" data-aos="fade-up" data-aos-delay="1400">
+        <h2>O que meus clientes dizem</h2>
+        <div class="testimonial" data-aos="fade-left" data-aos-delay="1500">
+            <p>"A consultoria foi fundamental para aumentar as vendas. O retorno foi muito maior do que o esperado!" - João Silva, Cliente</p>
+        </div>
+        <div class="testimonial" data-aos="fade-left" data-aos-delay="1600">
+            <p>"Não sabia como otimizar meus anúncios. Com a ajuda de Adelson, aumentei minhas conversões em 150%!" - Maria Oliveira, Cliente</p>
+        </div>
+    </section>
+
+    <section id="cta-section" class="cta-section" data-aos="fade-up" data-aos-delay="1700">
+        <h2>Pronto para aumentar suas conversões?</h2>
+        <p>Agende uma consultoria gratuita para analisar o seu tráfego pago e descobrir como podemos melhorar seus resultados.</p>
+        <a href="https://calendly.com/adelsoncarvalhocomercial/30min" class="cta-button">Agende sua Consultoria</a>
+    </section>
+
+    <section id="contact" class="contact" data-aos="fade-up" data-aos-delay="1800">
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário de briefing e vamos iniciar sua jornada de sucesso com tráfego pago.</p>
+        <form action="https://forms.gle/jdoFivajxkxzgx9U7" method="GET" target="_blank">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="whatsapp">WhatsApp</label>
+            <input type="text" id="whatsapp" name="whatsapp" required>
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="cta-button">Enviar</button>
+        </form>
+    </section>
+
+    <footer data-aos="fade-up" data-aos-delay="1900">
         <div class="social-links">
-            <a href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
-            <a href="https://www.instagram.com/adelsoncarvalhoo" target="_blank">Instagram</a>
+            <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" class="social-icon">WhatsApp</a>
+            <a href="https://www.instagram.com/adelsoncarvalhoo" target="_blank" class="social-icon">Instagram</a>
+            <a href="mailto:adelsoncarvalhocomercial@gmail.com" class="social-icon">E-mail</a>
         </div>
+        <p>&copy; 2025 Adelson Carvalho - Todos os direitos reservados</p>
     </footer>
 
+    <!-- Inicialização do AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Script para ativar animações com GSAP -->
+    <script>
+        // Animações com GSAP para maior controle
+        gsap.from(".cta-button", {
+            duration: 1,
+            opacity: 0,
+            y: 50,
+            ease: "power2.out",
+            delay: 1
+        });
+
+        gsap.from(".hero h1", {
+            duration: 1.5,
+            opacity: 0,
+            y: -50,
+            ease: "power2.out"
+        });
+
+        gsap.from(".services .service-card", {
+            duration: 1,
+            opacity: 0,
+            x: -100,
+            stagger: 0.2,
+            ease: "power2.out"
+        });
+    </script>
+
+    <!-- Script para ativar animações à medida que as seções são visualizadas -->
+    <script>
+        // Função para adicionar classe "visible" quando a seção entra no viewport
+        function onScroll() {
+            const sections = document.querySelectorAll('.services, .portfolio, .testimonials, .contact');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', onScroll);
+        onScroll(); // Ativa as animações ao carregar a página
+    </script>
 </body>
 </html>
